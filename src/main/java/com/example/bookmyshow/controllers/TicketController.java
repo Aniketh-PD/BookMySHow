@@ -41,10 +41,4 @@ public class TicketController {
                 .build();
     }
 
-    @GetMapping(path = "/get")
-    @ResponseStatus(HttpStatus.OK)
-    public String getTicket() {
-        System.out.println("Request hits the server - 2");
-        return "Get the ticket for you, world!";
-    }
 }
