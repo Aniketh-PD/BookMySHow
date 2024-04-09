@@ -2,9 +2,15 @@ package com.example.bookmyshow.models;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import lombok.*;
 
-@Entity(name = "book_my_show_users")
-public class User extends BaseModel{
+@Entity(name = "bms_users")
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class User extends BaseModel {
     private String name;
     @Column(unique = true)
     private String email;
